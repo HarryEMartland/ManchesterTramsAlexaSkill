@@ -1,0 +1,28 @@
+{
+  "mockResponse": {
+    "retrievalDate": "23:05:30",
+    "items": [
+      {
+        "name": "All lines",
+        "severity": "success",
+        "status": "Good service"
+      }
+    ]
+  },
+  "expectedResponse": {
+    "sessionAttributes": null,
+    "response": {
+      "outputSpeech": {
+        "type": "PlainText",
+        "text": "All services ok.",
+        "ssml": null
+      },
+      "card": {
+        "type": "Simple",
+        "title": "Tram Status Update",
+        "content": "All services ok.",
+        "text": null
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "mockResponse": {
+    "retrievalDate": "08:16:00",
+    "items": [
+      {
+        "detail": "<p>Due to an earlier issue at Queens Road, this has had a knock-on-effect on the East Didsbury to Shaw and Crompton services in both directions causing minor delays to service.</p><p>We apologise for any delay to your journey this morning</p>",
+        "id": 4,
+        "name": "East Didsbury",
+        "severity": "success",
+        "status": "Information available"
+      },
+      {
+        "detail": "<p>Due to an earlier issue at Queens Road, this has had a knock-on-effect on the East Didsbury to Shaw and Crompton services in both directions causing minor delays to service.</p><p>We apologise for any delay to your journey this morning</p>",
+        "id": 8,
+        "name": "Rochdale via Oldham",
+        "severity": "success",
+        "status": "Information available"
+      },
+      {
+        "name": "Other lines",
+        "severity": "success",
+        "status": "Good service"
+      }
+    ]
+  },
+  "expectedResponse": {
+    "sessionAttributes": null,
+    "response": {
+      "outputSpeech": {
+        "type": "PlainText",
+        "text": "East Didsbury. Due to an earlier issue at Queens Road, this has had a knock-on-effect on the East Didsbury to Shaw and Crompton services in both directions causing minor delays to service. Rochdale via Oldham. Due to an earlier issue at Queens Road, this has had a knock-on-effect on the East Didsbury to Shaw and Crompton services in both directions causing minor delays to service. That's all from Man Met.",
+        "ssml": null
+      },
+      "card": {
+        "type": "Simple",
+        "title": "Tram Status Update",
+        "content": "East Didsbury. Due to an earlier issue at Queens Road, this has had a knock-on-effect on the East Didsbury to Shaw and Crompton services in both directions causing minor delays to service. Rochdale via Oldham. Due to an earlier issue at Queens Road, this has had a knock-on-effect on the East Didsbury to Shaw and Crompton services in both directions causing minor delays to service. That's all from Man Met.",
+        "text": null
+      }
+    }
+  }
+}
