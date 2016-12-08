@@ -12,6 +12,6 @@ deploy:
   handler_name: "handler"
   zip: "app.zip"
   region: "eu-west-1"
-  runtime: "node.js 4.3"
+  runtime: "nodejs4.3"
   access_key_id: $AWS_ACCESS_KEY_ID
   secret_access_key: $AWS_SECRET_ACCESS_KEY
