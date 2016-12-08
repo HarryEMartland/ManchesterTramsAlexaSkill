@@ -8,7 +8,8 @@ deploy:
   provider: lambda
   function_name: "ManchesterTramsAlexaSkill"
   role: "arn:aws:iam::818032293643:role/service-role/node"
-  handler_name: "ManMetHandler.handler"
+  module_name: "ManMetHandler"
+  handler_name: "handler"
   zip: "app.zip"
   region: "eu-west-1"
   access_key_id: $AWS_ACCESS_KEY_ID
