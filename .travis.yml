@@ -4,8 +4,6 @@ node_js:
 before_script:
   - "npm install -g typescript"
   - "npm run build"
-after_success:
-  - cat ./coverage/lcov.info | ./node_modules/.bin/codecov
 deploy:
   provider: lambda
   function_name: "ManchesterTramsAlexaSkill"

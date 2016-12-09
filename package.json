@@ -6,7 +6,7 @@
   "scripts": {
     "build": "tsc;zip -r -j app.zip ./src/main/**.js",
     "clean": "rm ./src/**/*.js;rm ./src/**/*.js.map",
-    "test": "istanbul cover _mocha -R spec ./src/test/**/*.js"
+    "test": "istanbul cover _mocha -R spec ./src/test/**/*.js && cat ./coverage/lcov.info | ./node_modules/.bin/codecov"
   },
   "author": "",
   "license": "ISC",
