@@ -6,7 +6,7 @@
   "scripts": {
     "build": "tsc;zip -r -j app.zip ./src/main/**.js",
     "clean": "rm ./src/**/*.js;rm ./src/**/*.js.map",
-    "test": "istanbul cover _mocha -R spec ./src/test/**/*.js && cat ./coverage/lcov.info | ./node_modules/.bin/codecov"
+    "test": "istanbul cover ./node_modules/mocha/bin/_mocha -R spec ./src/test/**/*.js; ./node_modules/.bin/codecov; cat ./coverage/coverage.json | ./node_modules/.bin/remap-istanbul -o ./coverage/coverage.json"
   },
   "author": "",
   "license": "ISC",
@@ -19,8 +19,10 @@
     "@types/mocha": "^2.2.33",
     "@types/node": "0.0.2",
     "codecov": "^1.0.1",
+    "intern": "^3.4.2",
     "istanbul": "^0.4.5",
     "mocha": "^3.2.0",
+    "remap-istanbul": "^0.7.0",
     "typescript": "^2.1.4"
   }
 }
