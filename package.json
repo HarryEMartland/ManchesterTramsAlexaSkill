@@ -6,7 +6,7 @@
   "scripts": {
     "build": "tsc;zip -r -j app.zip ./src/main/**.js",
     "clean": "rm ./src/**/*.js;rm ./src/**/*.js.map",
-    "test": "istanbul cover _mocha ./src/test/**/*.js"
+    "test": "istanbul cover _mocha -R spec ./src/test/**/*.js"
   },
   "author": "",
   "license": "ISC",
@@ -18,6 +18,7 @@
     "@types/aws-sdk": "0.0.42",
     "@types/mocha": "^2.2.33",
     "@types/node": "0.0.2",
+    "codecov": "^1.0.1",
     "istanbul": "^0.4.5",
     "mocha": "^3.2.0",
     "typescript": "^2.1.4"
