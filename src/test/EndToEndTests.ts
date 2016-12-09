@@ -8,8 +8,8 @@ let files = fs.readdirSync("./src/test/resources");
 
 process.env.response_ending = "That's all from the trams.";
 
-files.forEach(function (file) {
-    describe("End To End Tests", function () {
+describe("End To End Tests", function () {
+    files.forEach(function (file) {
         it("should match with file " + file, function (done) {
             let testJson = require("./resources/" + file);
 
