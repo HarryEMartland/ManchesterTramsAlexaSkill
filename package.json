@@ -1,7 +1,8 @@
 {
   "name": "manmet",
   "version": "1.0.0",
-  "description": "Alexa sckill for tram updates in the Greater Manchester area",
+  "repository":"https://github.com/HarryEMartland/ManchesterTramsAlexaSkill",
+  "description": "Alexa skill for tram updates in the Greater Manchester area",
   "main": "index.js",
   "scripts": {
     "build": "tsc;zip -r -j app.zip ./src/main/**.js",
