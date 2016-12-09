@@ -4,6 +4,8 @@ node_js:
 before_script:
   - "npm install -g typescript"
   - "npm run build"
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
 deploy:
   provider: lambda
   function_name: "ManchesterTramsAlexaSkill"
