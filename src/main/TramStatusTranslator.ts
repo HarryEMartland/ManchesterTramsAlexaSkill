@@ -3,7 +3,6 @@ import {TramStatus} from "./TramStatus";
 export module TramStatusTranslator {
 
     const ALL_OK_RESPONSE = "All services ok.";
-    const ENDING = "That's all from Man Met.";
 
     function goodService(tramStatus: TramStatus): boolean {
         return (tramStatus.station == "Other lines" && tramStatus.status == "success") ||
@@ -31,7 +30,7 @@ export module TramStatusTranslator {
             }
         }
 
-        return response + ENDING;
+        return response + process.env.response_ending;
     }
 
 }

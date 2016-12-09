@@ -6,6 +6,8 @@ import * as assert from "assert";
 
 let files = fs.readdirSync("./src/test/resources");
 
+process.env.response_ending = "That's all from the trams.";
+
 files.forEach(function (file) {
     describe("End To End Tests", function () {
         it("should match with file " + file, function (done) {

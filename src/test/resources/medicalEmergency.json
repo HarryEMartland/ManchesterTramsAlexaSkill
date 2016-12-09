@@ -21,13 +21,13 @@
     "response": {
       "outputSpeech": {
         "type": "PlainText",
-        "text": "East Didsbury. Due to a medical emergency, the East Didsbury line is currently suspended. Passengers can use their tickets and passes on the 42, 43 and 84 bus services as well as train services to East Didsbury. That's all from Man Met.",
+        "text": "East Didsbury. Due to a medical emergency, the East Didsbury line is currently suspended. Passengers can use their tickets and passes on the 42, 43 and 84 bus services as well as train services to East Didsbury. That's all from the trams.",
         "ssml": null
       },
       "card": {
         "type": "Simple",
         "title": "Tram Status Update",
-        "content": "East Didsbury. Due to a medical emergency, the East Didsbury line is currently suspended. Passengers can use their tickets and passes on the 42, 43 and 84 bus services as well as train services to East Didsbury. That's all from Man Met.",
+        "content": "East Didsbury. Due to a medical emergency, the East Didsbury line is currently suspended. Passengers can use their tickets and passes on the 42, 43 and 84 bus services as well as train services to East Didsbury. That's all from the trams.",
         "text": null
       }
     }

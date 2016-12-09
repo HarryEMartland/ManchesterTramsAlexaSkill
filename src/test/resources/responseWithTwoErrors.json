@@ -28,13 +28,13 @@
     "response": {
       "outputSpeech": {
         "type": "PlainText",
-        "text": "East Didsbury. Due to an earlier issue at Queens Road, this has had a knock-on-effect on the East Didsbury to Shaw and Crompton services in both directions causing minor delays to service. Rochdale via Oldham. Due to an earlier issue at Queens Road, this has had a knock-on-effect on the East Didsbury to Shaw and Crompton services in both directions causing minor delays to service. That's all from Man Met.",
+        "text": "East Didsbury. Due to an earlier issue at Queens Road, this has had a knock-on-effect on the East Didsbury to Shaw and Crompton services in both directions causing minor delays to service. Rochdale via Oldham. Due to an earlier issue at Queens Road, this has had a knock-on-effect on the East Didsbury to Shaw and Crompton services in both directions causing minor delays to service. That's all from the trams.",
         "ssml": null
       },
       "card": {
         "type": "Simple",
         "title": "Tram Status Update",
-        "content": "East Didsbury. Due to an earlier issue at Queens Road, this has had a knock-on-effect on the East Didsbury to Shaw and Crompton services in both directions causing minor delays to service. Rochdale via Oldham. Due to an earlier issue at Queens Road, this has had a knock-on-effect on the East Didsbury to Shaw and Crompton services in both directions causing minor delays to service. That's all from Man Met.",
+        "content": "East Didsbury. Due to an earlier issue at Queens Road, this has had a knock-on-effect on the East Didsbury to Shaw and Crompton services in both directions causing minor delays to service. Rochdale via Oldham. Due to an earlier issue at Queens Road, this has had a knock-on-effect on the East Didsbury to Shaw and Crompton services in both directions causing minor delays to service. That's all from the trams.",
         "text": null
       }
     }

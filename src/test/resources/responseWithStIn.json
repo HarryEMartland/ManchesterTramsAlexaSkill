@@ -21,13 +21,13 @@
     "response": {
       "outputSpeech": {
         "type": "PlainText",
-        "text": "Manchester Airport. Due to a police incident, services will operate between Northern Moor and Manchester Airport. Services will run Northern Moor Road to the WythenshaweTown Centreonly. Customers are able to get the East Didsbury service and alight at St. Werburgh's Road and use their Metrolink tickets on the 19, 43 and 105 bus service. Tickets are also being accepted on Northern Rail. That's all from Man Met.",
+        "text": "Manchester Airport. Due to a police incident, services will operate between Northern Moor and Manchester Airport. Services will run Northern Moor Road to the WythenshaweTown Centreonly. Customers are able to get the East Didsbury service and alight at St. Werburgh's Road and use their Metrolink tickets on the 19, 43 and 105 bus service. Tickets are also being accepted on Northern Rail. That's all from the trams.",
         "ssml": null
       },
       "card": {
         "type": "Simple",
         "title": "Tram Status Update",
-        "content": "Manchester Airport. Due to a police incident, services will operate between Northern Moor and Manchester Airport. Services will run Northern Moor Road to the WythenshaweTown Centreonly. Customers are able to get the East Didsbury service and alight at St. Werburgh's Road and use their Metrolink tickets on the 19, 43 and 105 bus service. Tickets are also being accepted on Northern Rail. That's all from Man Met.",
+        "content": "Manchester Airport. Due to a police incident, services will operate between Northern Moor and Manchester Airport. Services will run Northern Moor Road to the WythenshaweTown Centreonly. Customers are able to get the East Didsbury service and alight at St. Werburgh's Road and use their Metrolink tickets on the 19, 43 and 105 bus service. Tickets are also being accepted on Northern Rail. That's all from the trams.",
         "text": null
       }
     }
