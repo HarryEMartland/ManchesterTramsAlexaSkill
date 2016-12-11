@@ -7,6 +7,11 @@ import * as assert from "assert";
 let files = fs.readdirSync("./src/test/resources");
 
 process.env.response_ending = "That's all from the trams.";
+process.env.alexa_skill_application_id ="5739j3k4j332";
+
+let request = {
+    session:{application:{applicationId:"5739j3k4j332"}}
+} as Request;
 
 describe("End To End Tests", function () {
     files.forEach(function (file) {
@@ -15,7 +20,7 @@ describe("End To End Tests", function () {
 
             mockHttp(testJson.mockResponse);
 
-            ManMetHandler.handler(null, null, function (error, result) {
+            ManMetHandler.handler(request, null, function (error, result) {
                 let actual = JSON.stringify(result);
                 let expected = JSON.stringify(testJson.expectedResponse);
                 assert.equal(actual, expected);
