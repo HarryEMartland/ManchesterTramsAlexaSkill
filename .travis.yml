@@ -6,7 +6,7 @@ before_script:
   - "npm run build"
 deploy:
   provider: lambda
-  function_name: "ManchesterTramsAlexaSkill"
+  function_name: "ManchesterTramsAlexaSkill=$TRAVIS_BRANCH"
   role: "arn:aws:iam::818032293643:role/service-role/node"
   module_name: "ManMetHandler"
   handler_name: "handler"
@@ -15,5 +15,3 @@ deploy:
   runtime: "nodejs4.3"
   access_key_id: $AWS_ACCESS_KEY_ID
   secret_access_key: $AWS_SECRET_ACCESS_KEY
-  on:
-      branch: master
