@@ -6,7 +6,7 @@ before_script:
   - "npm run build"
 deploy:
   provider: lambda
-  function_name: "ManchesterTramsAlexaSkill=$TRAVIS_BRANCH"
+  function_name: "ManchesterTramsAlexaSkill-$TRAVIS_BRANCH"
   role: "arn:aws:iam::818032293643:role/service-role/node"
   module_name: "ManMetHandler"
   handler_name: "handler"
