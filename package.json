@@ -7,7 +7,7 @@
   "scripts": {
     "build": "tsc;zip -r -j app.zip ./src/main/**.js",
     "clean": "rm ./src/**/*.js;rm ./src/**/*.js.map",
-    "test": "istanbul cover ./node_modules/mocha/bin/_mocha -R spec ./src/test/**/*.js; ./node_modules/.bin/codecov; cat ./coverage/coverage.json | ./node_modules/.bin/remap-istanbul -o ./coverage/coverage.json"
+    "test": "istanbul cover ./node_modules/mocha/bin/_mocha -R spec ./src/test/**/*.js && ./node_modules/.bin/codecov && cat ./coverage/coverage.json | ./node_modules/.bin/remap-istanbul -o ./coverage/coverage.json"
   },
   "author": "",
   "license": "ISC",
