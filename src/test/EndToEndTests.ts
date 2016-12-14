@@ -1,8 +1,9 @@
 import * as fs from "fs";
-import * as https from "https";
 import * as ManMetHandler from "../main/ManMetHandler";
+import * as sinon from "sinon";
 import "mocha";
 import * as assert from "assert";
+import {HttpClient} from "../main/HttpClient";
 
 let files = fs.readdirSync("./src/test/resources");
 
@@ -18,9 +19,9 @@ describe("End To End Tests", function () {
         it("should match with file " + file, function (done) {
             let testJson = require("./resources/" + file);
 
-            mockHttp(testJson.mockResponse);
+            mockHttpClient(testJson.mockResponse);
 
-            ManMetHandler.handler(request, null, function (error, result) {
+            ManMetHandler.handler(request, null, function (error:any, result:any) {
                 let actual = JSON.stringify(result);
                 let expected = JSON.stringify(testJson.expectedResponse);
                 assert.equal(actual, expected);
@@ -30,19 +31,8 @@ describe("End To End Tests", function () {
     })
 });
 
-
-function mockHttp(mockResponse: any) {
-    https.get = function (options: any, callback: (any: any) => any) {
-        let result = {
-            on: function (type: string, callback: (data: string)=>any) {
-                if (type == "data") {
-                    callback(JSON.stringify(mockResponse))
-                }
-                if (type == "end") {
-                    callback(null)
-                }
-            }
-        };
-        callback(result)
-    };
+function mockHttpClient( mockResponse:any){
+    sinon.stub(HttpClient, "get", function (request: Request) :Promise<string>{
+        return Promise.resolve(JSON.stringify(mockResponse))
+    });
 }

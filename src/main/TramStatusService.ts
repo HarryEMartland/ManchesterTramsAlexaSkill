@@ -1,5 +1,6 @@
 import {TramStatus} from "./TramStatus";
 import * as https from "https";
+import {HttpClient} from "./HttpClient";
 
 export module TramStatusService {
 
@@ -56,19 +57,8 @@ export module TramStatusService {
     }
 
     export function getTramStatuses(callback: (tramStatuses: Array<TramStatus>) => any) {
-        https.get({
-            hostname: process.env.tram_status_host,
-            port: 443,
-            path: process.env.tram_status_path,
-            agent: false
-        }, (res) => {
-            var body = '';
-            res.on('data', function (chunk) {
-                body += chunk;
-            });
-            res.on('end', function () {
-                callback(processResponse(body))
-            });
+        HttpClient.get(process.env.tram_status_url).then(function (response) {
+            callback(processResponse(response));
         });
     }
 
