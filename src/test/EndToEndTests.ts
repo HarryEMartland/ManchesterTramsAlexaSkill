@@ -8,6 +8,7 @@ import {HttpClient} from "../main/HttpClient";
 let files = fs.readdirSync("./src/test/resources");
 
 process.env.response_ending = "That's all from the trams.";
+process.env.tram_status_cache = 300;
 process.env.alexa_skill_application_id = "5739j3k4j332";
 
 let request = {

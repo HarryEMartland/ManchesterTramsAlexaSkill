@@ -1,6 +1,5 @@
 import {TramStatus} from "./TramStatus";
-import * as https from "https";
-import {HttpClient} from "./HttpClient";
+import {CachedHttpClient} from "./CachedHttpClient";
 
 export module TramStatusService {
 
@@ -57,7 +56,7 @@ export module TramStatusService {
     }
 
     export function getTramStatuses(callback: (tramStatuses: Array<TramStatus>) => any) {
-        HttpClient.get(process.env.tram_status_url).then(function (response) {
+        CachedHttpClient.get(process.env.tram_status_url, process.env.tram_status_cache).then(function (response) {
             callback(processResponse(response));
         });
     }
