@@ -56,7 +56,7 @@ export module TramStatusService {
     }
 
     export function getTramStatuses(callback: (tramStatuses: Array<TramStatus>) => any) {
-        CachedHttpClient.get(process.env.tram_status_url, process.env.tram_status_cache).then(function (response) {
+        CachedHttpClient.get(process.env.tram_status_url, parseInt(process.env.tram_status_cache)).then(function (response) {
             callback(processResponse(response));
         });
     }
